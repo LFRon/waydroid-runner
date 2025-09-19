@@ -24,8 +24,8 @@ jobs:
           
           url=https://sourceforge.net/projects/waydroid/files/images/system/lineage/waydroid_x86_64/lineage-18.1-20250628-GAPPS-waydroid_x86_64-system.zip/download
           wget $url
-          u=`dirname $url`
-          unzip `download`
+          mv download download.zip
+          unzip download.zip
           # 扩容 img
           qemu-img resize system.img +1G
           sudo modprobe nbd max_ports=8 
