@@ -1,7 +1,6 @@
 name: Auto Building Runner
 run-name: ${{ github.actor }} Auto Building Runner 🚀
 on:
-  push:
   workflow_dispatch:
 jobs:
   Explore-GitHub-Actions:
