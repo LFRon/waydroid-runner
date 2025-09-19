@@ -50,12 +50,12 @@ jobs:
 
           
       - name: upload result(system.img)
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
           name: system.img
           path: /tmp/system.img
       #- name: upload result(vendor.img)
-       # uses: actions/upload-artifact@v1
+       # uses: actions/upload-artifact@v4
        # with:
         #  name: vendor.img
          # path: /usr/share/waydroid-extra/images/vendor.img
